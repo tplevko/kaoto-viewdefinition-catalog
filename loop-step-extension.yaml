@@ -1,0 +1,11 @@
+name: Config
+id: loop-step-extension
+type: step
+url:  http://localhost:9001/remoteEntry.js
+module: './LoopStep'
+scope: 'loopStep'
+constraints:
+   -
+      mandatory: true
+      operation: CONTAINS_STEP_NAME
+      parameter: loop
